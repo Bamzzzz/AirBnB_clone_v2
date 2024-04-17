@@ -17,7 +17,7 @@ from models.review import Review
 
 
 class HBNBCommand(cmd.Cmd):
-    """ Contains the functionality for the HBNB console"""
+""" Contains the functionality for the HBNB console"""
 
     prompt = '(hbnb) ' if sys.__stdin__.isatty() else ''
 
@@ -372,4 +372,4 @@ class HBNBCommand(cmd.Cmd):
 
 
 if __name__ == "__main__":
-    HBNBCommand().cmdloop()
+HBNBCommand().cmdloop()
