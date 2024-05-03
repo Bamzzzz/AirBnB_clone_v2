@@ -10,7 +10,7 @@ from fabric.api import env, local, put, run
 from datetime import datetime
 from os.path import exists, isdir
 <<<<<<< HEAD
-env.hosts = ['54.160.71.137', '54.85.202.234']
+env.hosts = ['3.84.239.197', '3.85.41.29']
 =======
 >>>>>>> da006a1e06fdcee5b3c710fdf8d0b07c352840fa
 
