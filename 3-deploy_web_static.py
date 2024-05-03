@@ -12,7 +12,6 @@ from os.path import exists, isdir
 <<<<<<< HEAD
 env.hosts = ['54.160.71.137', '54.85.202.234']
 =======
-env.hosts = ['54.160.77.90', '10.25.190.21']
 >>>>>>> da006a1e06fdcee5b3c710fdf8d0b07c352840fa
 
 
