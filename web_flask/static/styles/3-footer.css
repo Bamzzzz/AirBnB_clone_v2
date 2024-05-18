@@ -1,5 +1,6 @@
 footer {
     position: fixed;
+<<<<<<< HEAD
     background: white;
     height: 60px;
     width: 100%;
@@ -13,4 +14,14 @@ footer p {
     bottom: 0;
     right: 0;
     left: 0;
+=======
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    border-top: 1px solid #CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 3c9f5b97ec01493e470a21385fae9bd3213f30f8
 }

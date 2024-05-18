@@ -6,7 +6,7 @@ archive to the web servers
 
 from fabric.api import put, run, env
 from os.path import exists
-env.hosts = ['54.160.71.137', '54.85.202.234']
+env.hosts = ['3.84.239.197', '3.85.41.29']
 
 
 def do_deploy(archive_path):

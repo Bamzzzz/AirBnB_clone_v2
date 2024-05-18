@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """starts a Flask web application for AirBnB clone"""
 
 from flask import Flask, render_template
@@ -66,10 +67,29 @@ def hbnb_filters():
 
     return render_template('10-hbnb_filters.html',
                            states=states, state_cities=cities,
+=======
+"""
+start Flask application
+"""
+
+from flask import Flask, render_template
+from models import *
+from models import storage
+app = Flask(__name__)
+
+
+@app.route('/hbnb_filters', strict_slashes=False)
+def filters():
+    """display a HTML page like 6-index.html from static"""
+    states = storage.all("State").values()
+    amenities = storage.all("Amenity").values()
+    return render_template('10-hbnb_filters.html', states=states,
+>>>>>>> 3c9f5b97ec01493e470a21385fae9bd3213f30f8
                            amenities=amenities)
 
 
 @app.teardown_appcontext
+<<<<<<< HEAD
 def teardown_db_conn(error):
     """Closes the database again at the end of the request.
     """
@@ -78,3 +98,11 @@ def teardown_db_conn(error):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+=======
+def teardown_db(exception):
+    """closes the storage on teardown"""
+    storage.close()
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')
+>>>>>>> 3c9f5b97ec01493e470a21385fae9bd3213f30f8
